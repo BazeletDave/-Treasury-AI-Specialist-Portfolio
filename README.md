@@ -106,6 +106,6 @@ Grand Research Institute
 Thunderbird School of Global Management
 Arizona State University
 
-Master of Global Management, 2026
+Global Management, 2026
 
 Master of Leadership and Management, Artificial Intelligence concentration, in progress 
