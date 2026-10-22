@@ -1,0 +1,55 @@
+name: Institutional AI Assurance
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "research/assurance/**"
+      - ".github/workflows/institutional-assurance.yml"
+  pull_request:
+    paths:
+      - "research/assurance/**"
+      - ".github/workflows/institutional-assurance.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: institutional-assurance-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Unit tests and synthetic policy gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run assurance unit tests
+        working-directory: research/assurance
+        run: python -m unittest discover -v -p "test_*.py"
+      - name: Verify synthetic allowed and denied scenarios
+        working-directory: research/assurance
+        run: |
+          python - <<'PY'
+          from assurance import fit, evaluate
+          baseline = [
+              dict(privilege_count=n, unapproved_tool_calls=0, unpatched_critical=0,
+                   unexpected_egress=0, missing_attestations=0)
+              for n in (1, 2, 3, 2, 1)
+          ]
+          model = fit(baseline)
+          allowed = {**baseline[0], "production": False}
+          denied = {**baseline[0], "production": True, "human_approval": False}
+          assert evaluate(allowed, model)["decision"] == "PASS"
+          assert evaluate(denied, model)["decision"] == "BLOCK"
+          print("Synthetic policy scenarios validated")
+          PY
