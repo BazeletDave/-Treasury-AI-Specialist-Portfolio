@@ -1,8 +1,8 @@
-# Treasury AI Specialist Portfolio | GRI Research Prototype
+# Institutional AI Governance and Algorithmic Management | Grand Research Institute
 
 > **Independent research and demonstration only.** This repository is a Grand Research Institute educational and applied research project. It preserves an earlier Treasury AI Specialist portfolio exercise and contains exploratory institutional AI governance case studies, sample code, and synthetic validation scenarios. It is **not** an official U.S. Treasury project, a government operated system, a deployed cybersecurity product, a production security control, or evidence of federal authorization, sponsorship, access, or endorsement.
 
-**Project status:** Research prototype and historical portfolio demonstration. No production deployment or continuous threat monitoring is intended.
+**Current purpose:** An independent, evolving research repository on algorithmic management, AI development, and institutional governance. The original Treasury portfolio is retained solely as a historical originating case. No production deployment or continuous threat monitoring is intended.
 
 **Research focus:** Institutional accessibility of AI capabilities, human authority, software assurance, algorithmic management, and governance. The Treasury TTB label verification exercise and PHP software assurance example are comparative research cases; neither establishes compromise of a federal system.
 
@@ -10,11 +10,21 @@
 
 **Research materials:** [Living research index](research/README.md) · [Case registry](research/cases/README.md) · [Prototype and limitations](research/assurance/README.md) · [Evidence protocol](research/methods/EVIDENCE_PROTOCOL.md)
 
----
+## Why This Repository Expanded
 
-## Original Portfolio Context
+The original Treasury AI Specialist portfolio was developed to demonstrate applied AI engineering and governance concepts in a public sector context. That exercise raised a broader research question: as accessible AI tools make it possible to reproduce institutionally relevant functions, how do governments, organizations, and regulatory systems establish the authority, accountability, and safeguards needed to use those capabilities responsibly?
 
-## Overview
+Grand Research Institute has therefore expanded this repository into an ongoing research environment, **not a continuation of an AI engineering job submission**. The portfolio is retained as an originating artifact, while the active research examines how institutions have long used algorithms to organize work, allocate resources, evaluate performance, enforce rules, and shape decisions. These established forms of algorithmic management and digital infrastructure provide essential institutional context for contemporary AI and emerging agentic systems. They are foundational antecedents, not a claim that every algorithm is itself AI.
+
+The research follows the transition from rule based automation and algorithmic management toward predictive models, generative AI, and delegated agentic capabilities. It investigates how that transition changes institutional power, managerial responsibility, authorization, transparency, contestability, security, and public legitimacy. The **Nelson Model** supplies the principal institutional analytical lens: formal and informal rules, actors and interests, power, implementation, legitimacy, and adaptation. Technical assurance, such as the PHP software integrity case, is examined alongside governance of consequential decisions, such as the Treasury TTB label verification prototype.
+
+This is a living, evidence based research archive. New cases and findings should be dated, sourced, distinguished from hypotheses, and linked to reproducible methods. Its purpose is to support cumulative inquiry and future reference, not to represent a production system, official government initiative, or validated security service.
+
+## Historical Origin: Treasury AI Specialist Portfolio
+
+The following material documents the initial portfolio exercise and its historical objectives. It is preserved for provenance and does not define the present scope of Grand Research Institute's research.
+
+### Original Overview
 
 This repository supports my portfolio submission for the IT Specialist (Artificial Intelligence) role with the U.S. Department of the Treasury, Common Services Center, Office of the Deputy Administrator for Technology Services Operations.
 
