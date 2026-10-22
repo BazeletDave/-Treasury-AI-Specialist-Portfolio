@@ -14,6 +14,10 @@ Create a JSON array of at least three baseline records and one JSON observation.
 
 Output includes PASS, REVIEW or BLOCK, numeric anomaly indicators, and policy findings. Exit codes: 0 PASS, 1 REVIEW, 2 BLOCK. No external network or institutional systems are accessed.
 
-## Limits and next work
+## Project status and scope
+
+**Research prototype only.** This example is maintained to demonstrate governance concepts and testable policy checks. It is not an operational protection service, a deployed institutional monitoring system, a validated vulnerability detector, or a production authorization gate. The accompanying GitHub Actions workflow runs synthetic CI checks and does not itself block production deployment. Further engineering is not part of the current project scope.
+
+## Limits and potential future research
 
 The tool currently evaluates supplied evidence; it does not independently discover vulnerabilities, validate patch provenance, inspect live runtime memory, or enforce production deployments. Future work should add signed evidence ingestion, robust input schemas, independent vulnerability feeds, threat model tests, calibrated detection, drift assessment, review workflows and controlled CI integration. Use synthetic or explicitly authorized data only.
