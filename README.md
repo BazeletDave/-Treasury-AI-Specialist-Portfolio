@@ -1,4 +1,18 @@
-# Treasury AI Specialist Portfolio
+# Treasury AI Specialist Portfolio | GRI Research Prototype
+
+> **Independent research and demonstration only.** This repository is a Grand Research Institute educational and applied research project. It preserves an earlier Treasury AI Specialist portfolio exercise and contains exploratory institutional AI governance case studies, sample code, and synthetic validation scenarios. It is **not** an official U.S. Treasury project, a government operated system, a deployed cybersecurity product, a production security control, or evidence of federal authorization, sponsorship, access, or endorsement.
+
+**Project status:** Research prototype and historical portfolio demonstration. No production deployment or continuous threat monitoring is intended.
+
+**Research focus:** Institutional accessibility of AI capabilities, human authority, software assurance, algorithmic management, and governance. The Treasury TTB label verification exercise and PHP software assurance example are comparative research cases; neither establishes compromise of a federal system.
+
+**What the code does:** The assurance example applies deterministic checks and a simple statistical baseline anomaly score to supplied test observations. GitHub Actions, where enabled, runs repository tests against synthetic scenarios only. Passing these tests does not certify security, prevent an external incident, enforce a real deployment gate, or establish machine learning efficacy in operational environments.
+
+**Research materials:** [Living research index](research/README.md) · [Case registry](research/cases/README.md) · [Prototype and limitations](research/assurance/README.md) · [Evidence protocol](research/methods/EVIDENCE_PROTOCOL.md)
+
+---
+
+## Original Portfolio Context
 
 ## Overview
 
